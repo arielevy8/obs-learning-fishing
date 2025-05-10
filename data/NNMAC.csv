@@ -1,0 +1,1543 @@
+success,timeout,failed_images,failed_audio,failed_video,trial_type,trial_index,time_elapsed,internal_node_id,payoff,volatility,uncertainty,transition_prob,counterbalance,resample_fish,rt,stimulus,response,trial_name,task_type,phase,stakes,frame_color,reward_multiplier,available_boats,boat_chosen_id,boat_chosen_name,reward,cumulative_reward,fish_caught_id,fish_caught_name,valuable_fish_id,valuable_fish_name,day,accuracy,participant_id
+True,False,[],[],[],preload,0,1569,0.0-0.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,1,58755,0.0-1.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,57183.0,"
+      <div style=""max-width: 900px; margin: 0 auto;"">
+        <p><strong>Please consider the following information carefully before deciding whether to participate in this research.</strong></p>
+        <p>The purpose of this study is to examine how people make decisions. You will be asked to answer some questions about a situation described to you. The study will take approximately <strong>26 minutes</strong> to complete. You will receive at least <strong>$4.5</strong>. In addition, you can receive a bonus ranging between <strong>$0 and $3.75</strong> based on your performance in the study. Overall, you can receive up to <strong>$8.25</strong> on Prolific.</p>
+        <p>There are no anticipated risks associated with participating in this study. There are no direct benefits to you for taking part in this study. The effects of participating should be comparable to those you would ordinarily experience from viewing a computer monitor and using a mouse or keyboard for a similar amount of time. At the end of the study, we will provide an explanation of the questions that motivate this line of research and will describe the potential implications.</p>
+        <p>Your participation in this study is completely voluntary and you may refuse to participate or you may choose to withdraw at any time without penalty or loss of benefits to which you are otherwise entitled.</p>
+        <p>Your participation in this study will remain confidential. No personally identifiable information will be associated with your data. All participants' answers will be aggregated, so your individual responses will not be analyzed (except for any feedback you choose to provide). Please do not enter any sensitive or personally identifiable information in a free text answer.</p>
+        <p>If you have questions or concerns about your participation or payment or want to request a summary of research findings, please contact the student conducting this research: <a href=""mailto:ariellevy@g.harvard.edu"">Ariel Levy</a>. For any other problems related to this study, you may also contact the faculty member supervising this work: <a href=""mailto:cushman@fas.harvard.edu"">Fiery Cushman</a>. For questions, concerns, suggestions, or complaints that have not been or cannot be addressed by the researcher, or to report research-related harm, please contact the Committee on the Use of Human Subjects in Research at Harvard University by phone at 617-496-2847 or by <a href=""mailto:cuhs@harvard.edu"">email</a>. Please print or save a copy of this form for your records.</p>
+      </div>",0,instructions,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,2,247243,0.0-2.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,188486.0,"
+    <div style=""max-width: 800px; margin: 0 auto;"">
+      <img src='img/misthaven.png' width='800' height='auto'></img>
+      <h3>Welcome to Misthaven!</h3>
+      <p>You've just moved to Misthaven, a charming lake town where fishing is the heart of the local economy. While you don't have any prior fishing experience, <strong>you know that becoming a successful fisher is crucial for your new life here.</strong></p>
+      <p>To become successful, you need to know which fish fetch the best price in the market on any given day, and which boats give you the best chance of catching those fish. </p>
+    </div>",0,welcome,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,3,283787,0.0-3.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,36542.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>The Fish of Misthaven Lake</h3>
+      <p>Three species of fish make their home in different parts of Misthaven's waters:</p>
+      
+      <div style=""display: flex; justify-content: space-around; margin: 20px 0;"">
+        <div style=""text-align: center;"">
+          <img src='img/fish_blue.png' width='auto' height='180px'></img>
+          <p><strong>Locona</strong></p>
+        </div>
+        <div style=""text-align: center;"">
+          <img src='img/fish_green.png' width='auto' height='180px'></img>
+          <p><strong>Addish</strong></p>
+        </div>
+        <div style=""text-align: center;"">
+          <img src='img/fish_red.png' width='auto' height='180px'></img>
+          <p><strong>Whuffey</strong></p>
+        </div>
+      </div>
+      
+      <p>The market value of these fish changes regularly. Each day, <strong>only one species brings a good price</strong> at the market. Experienced fishers know which fish is valuable on any given day and choose their fishing spots accordingly.</p>
+      
+      <p>The valuable fish species <strong>changes from time to time</strong>, as different fish become more in demand at the market.</p>
+    </div>",0,fish_info,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,4,348601,0.0-4.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,64813.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>The Fishing Boats of Misthaven</h3>
+      <p>Three types of boats are available at the harbor, each designed for different fishing grounds:</p>
+      
+      <div style=""display: flex; justify-content: space-around; margin: 20px 0;"">
+        <div style=""text-align: center; width: 30%;"">
+          <img src=""img/boat_wood.png"" width='250' height='auto'></img>
+          <p><strong>The Wooden Boat</strong><br>
+          Built for shallow reeds where Locona thrive<br>
+          <span style=""font-size: 0.9em;"">
+            80% chance for catching Locona<br>
+            20% chance for catching Addish passing through
+          </span></p>
+        </div>
+
+        <div style=""text-align: center; width: 30%;"">
+          <img src=""img/boat_white.png"" width='250' height='auto'></img>
+          <p><strong>The White Boat</strong><br>
+          Perfect for deep waters where Addish gather<br>
+          <span style=""font-size: 0.9em;"">
+            80% chance for catching Addish<br>
+            20% chance for catching Whuffey migrating through
+          </span></p>
+        </div>
+
+        <div style=""text-align: center; width: 30%;"">
+          <img src=""img/boat_metal.png"" width='250' height='auto'></img>
+          <p><strong>The Metal Boat</strong><br>
+          Designed for rocky outcrops where Whuffey hide<br>
+          <span style=""font-size: 0.9em;"">
+            80% chance for catching Whuffey<br>
+            20% chance for catching Locona wandering through
+          </span></p>
+        </div>
+      </div>
+
+      <p>Each day, you'll need to choose your boat carefully. While each boat is best suited for catching a specific fish, it might also catch a second type that passes through those waters!</p>
+    </div>",0,boat_info,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,5,377640,0.0-5.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,29038.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>Let's Start Your Fishing Training!</h3>
+      <p>First, you'll learn how different boats help you catch different fish. In this phase:</p>
+      <ul>
+        <li>You'll be told which fish is valuable each day</li>
+        <li>All three boats will be available</li>
+        <li>You'll get immediate feedback on your catches</li>
+      </ul>
+      <p>Ready to start practicing?</p>
+    </div>",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,6,392377,0.0-6.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,14734.100000023842,,0,fish_bandit_trial_1,train,training,low,gray,10.0,"[1,2,0]",0.0,Wood Boat,0.0,0.0,0.0,Locona,1.0,Addish,1.0,,NNMAC
+,,,,,html-button-response,7,402144,0.0-7.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,9765.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>0 coins</strong>.</p>
+          <p>Overall, you have earned <strong>0 coins</strong>.</p></div>",0,feedback_1,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,8,410878,0.0-8.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,8730.5,,1,fish_bandit_trial_2,train,training,low,gray,10.0,"[1,0,2]",1.0,White Boat,10.0,10.0,1.0,Addish,1.0,Addish,2.0,,NNMAC
+,,,,,html-button-response,9,414858,0.0-9.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,3978.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>10 coins</strong>.</p>
+          <p>Overall, you have earned <strong>10 coins</strong>.</p></div>",0,feedback_2,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,10,419193,0.0-10.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,4333.399999976158,,1,fish_bandit_trial_3,train,training,low,gray,10.0,"[0,2,1]",1.0,White Boat,10.0,20.0,1.0,Addish,1.0,Addish,3.0,,NNMAC
+,,,,,html-button-response,11,421314,0.0-11.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2119.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>10 coins</strong>.</p>
+          <p>Overall, you have earned <strong>20 coins</strong>.</p></div>",0,feedback_3,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,12,440425,0.0-12.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,19110.0,"
+     <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>💰🎉 Festival Days! 🎉💰</h3>
+      <img src='img/misthaven_festival.png' width='650' height='auto'></img>
+      <p> Ordinarily, valuable fish sell in the market for 10 coins.  But Misthaven sometimes has festivals, and the price of fish is 10 times higher on those days!  Instead of making 10 coins for the best fish, you can make 100 coins!</p>
+    </div>",0,festival_info,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,13,443998,0.0-13.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,3570.7999999523163,,1,fish_bandit_trial_4,train,training,high,deeppink,100.0,"[0,2,1]",1.0,White Boat,100.0,120.0,1.0,Addish,1.0,Addish,4.0,,NNMAC
+,,,,,html-button-response,14,449586,0.0-14.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,5588.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>100 coins</strong>.</p>
+          <p>Overall, you have earned <strong>120 coins</strong>.</p></div>",0,feedback_4,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,15,452078,0.0-15.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2490.5,,1,fish_bandit_trial_5,train,training,high,deeppink,100.0,"[2,1,0]",1.0,White Boat,100.0,220.0,1.0,Addish,1.0,Addish,5.0,,NNMAC
+,,,,,html-button-response,16,454626,0.0-16.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2546.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>100 coins</strong>.</p>
+          <p>Overall, you have earned <strong>220 coins</strong>.</p></div>",0,feedback_5,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,17,460900,0.0-17.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,6272.799999952316,,1,fish_bandit_trial_6,train,training,high,deeppink,100.0,"[2,0,1]",1.0,White Boat,0.0,220.0,2.0,Whuffey,1.0,Addish,6.0,,NNMAC
+,,,,,html-button-response,18,467402,0.0-18.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,6502.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>0 coins</strong>.</p>
+          <p>Overall, you have earned <strong>220 coins</strong>.</p></div>",0,feedback_6,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,19,486336,0.0-19.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,18932.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>Well Done! Now For Your Next Challenge</h3>
+      <p>In Misthaven, not all boats are always available. Sometimes boats are out for maintenance, or already rented by other fishers.</p>
+      <p>In this phase:</p>
+      <ul>
+        <li>You'll still know which fish is valuable</li>
+        <li>Only two boats will be available each day</li>
+        <li>You'll continue to get immediate feedback</li>
+      </ul>
+      <p>Ready to practice with limited boat availability?</p>
+    </div>",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,20,489025,0.0-20.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2688.399999976158,,2,fish_bandit_trial_7,train,training,low,gray,10.0,"[2,0]",2.0,Metal Boat,10.0,230.0,2.0,Whuffey,2.0,Whuffey,7.0,,NNMAC
+,,,,,html-button-response,21,490678,0.0-21.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1651.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>10 coins</strong>.</p>
+          <p>Overall, you have earned <strong>230 coins</strong>.</p></div>",0,feedback_7,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,22,492783,0.0-22.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2103.199999988079,,2,fish_bandit_trial_8,train,training,low,gray,10.0,"[2,1]",2.0,Metal Boat,10.0,240.0,2.0,Whuffey,2.0,Whuffey,8.0,,NNMAC
+,,,,,html-button-response,23,495057,0.0-23.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2271.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>10 coins</strong>.</p>
+          <p>Overall, you have earned <strong>240 coins</strong>.</p></div>",0,feedback_8,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,24,498335,0.0-24.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,3275.899999976158,,1,fish_bandit_trial_9,train,training,low,gray,10.0,"[1,0]",1.0,White Boat,0.0,240.0,1.0,Addish,2.0,Whuffey,9.0,,NNMAC
+,,,,,html-button-response,25,499883,0.0-25.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1547.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>0 coins</strong>.</p>
+          <p>Overall, you have earned <strong>240 coins</strong>.</p></div>",0,feedback_9,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,26,501751,0.0-26.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1865.699999988079,,2,fish_bandit_trial_10,train,training,low,gray,10.0,"[1,2]",2.0,Metal Boat,0.0,240.0,0.0,Locona,2.0,Whuffey,10.0,,NNMAC
+,,,,,html-button-response,27,504740,0.0-27.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2987.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>0 coins</strong>.</p>
+          <p>Overall, you have earned <strong>240 coins</strong>.</p></div>",0,feedback_10,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,28,507167,0.0-28.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2425.599999964237,,1,fish_bandit_trial_11,train,training,low,gray,10.0,"[1,0]",1.0,White Boat,0.0,240.0,1.0,Addish,2.0,Whuffey,11.0,,NNMAC
+,,,,,html-button-response,29,508350,0.0-29.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1181.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>0 coins</strong>.</p>
+          <p>Overall, you have earned <strong>240 coins</strong>.</p></div>",0,feedback_11,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,30,510583,0.0-30.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2230.800000011921,,2,fish_bandit_trial_12,train,training,low,gray,10.0,"[0,2]",2.0,Metal Boat,10.0,250.0,2.0,Whuffey,2.0,Whuffey,12.0,,NNMAC
+,,,,,html-button-response,31,512172,0.0-31.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1586.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>10 coins</strong>.</p>
+          <p>Overall, you have earned <strong>250 coins</strong>.</p></div>",0,feedback_12,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,32,516503,0.0-32.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,4329.799999952316,,1,fish_bandit_trial_13,train,training,low,gray,10.0,"[0,1]",1.0,White Boat,0.0,250.0,1.0,Addish,0.0,Locona,13.0,,NNMAC
+,,,,,html-button-response,33,517743,0.0-33.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1238.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>0 coins</strong>.</p>
+          <p>Overall, you have earned <strong>250 coins</strong>.</p></div>",0,feedback_13,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,34,519597,0.0-34.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1851.7000000476835,,2,fish_bandit_trial_14,train,training,low,gray,10.0,"[0,2]",2.0,Metal Boat,0.0,250.0,2.0,Whuffey,0.0,Locona,14.0,,NNMAC
+,,,,,html-button-response,35,520990,0.0-35.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1391.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>0 coins</strong>.</p>
+          <p>Overall, you have earned <strong>250 coins</strong>.</p></div>",0,feedback_14,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,36,523804,0.0-36.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2812.300000011921,,0,fish_bandit_trial_15,train,training,low,gray,10.0,"[0,1]",0.0,Wood Boat,0.0,250.0,1.0,Addish,0.0,Locona,15.0,,NNMAC
+,,,,,html-button-response,37,525795,0.0-37.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1989.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>0 coins</strong>.</p>
+          <p>Overall, you have earned <strong>250 coins</strong>.</p></div>",0,feedback_15,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,38,528175,0.0-38.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2378.399999976158,,2,fish_bandit_trial_16,train,training,low,gray,10.0,"[1,2]",2.0,Metal Boat,10.0,260.0,0.0,Locona,0.0,Locona,16.0,,NNMAC
+,,,,,html-button-response,39,529521,0.0-39.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1343.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>10 coins</strong>.</p>
+          <p>Overall, you have earned <strong>260 coins</strong>.</p></div>",0,feedback_16,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,40,531040,0.0-40.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1517.5999999642372,,0,fish_bandit_trial_17,train,training,low,gray,10.0,"[1,0]",0.0,Wood Boat,10.0,270.0,0.0,Locona,0.0,Locona,17.0,,NNMAC
+,,,,,html-button-response,41,535497,0.0-41.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,4455.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>10 coins</strong>.</p>
+          <p>Overall, you have earned <strong>270 coins</strong>.</p></div>",0,feedback_17,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,42,537289,0.0-42.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1791.100000023842,,2,fish_bandit_trial_18,train,training,low,gray,10.0,"[1,2]",2.0,Metal Boat,0.0,270.0,2.0,Whuffey,0.0,Locona,18.0,,NNMAC
+,,,,,html-button-response,43,538552,0.0-43.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1261.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div><p>You managed to sell your fish for <strong>0 coins</strong>.</p>
+          <p>Overall, you have earned <strong>270 coins</strong>.</p></div>",0,feedback_18,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,44,547044,0.0-44.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,8491.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>Meet Allie, Your Fishing Mentor!</h3>
+      <img src='img/misthaven_fisher.png' style='width: 200px; height: auto;'></img>
+      <p>This is Allie, one of Misthaven's most experienced fishers. She has been fishing these waters for decades and knows exactly which fish is valuable each day. </p>
+      <p>For the next few trials:</p>
+      <ul>
+        <li>You'll accompany Allie on her fishing trips</li>
+        <li>You'll know which fish is valuable</li>
+        <li>You'll see which boat Allie chooses</li>
+        <li>You'll learn from her expertise</li>
+      </ul>
+      <p>Ready to learn from Allie?</p>
+    </div>",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,45,561110,0.0-45.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_19,observe,training,high,grey,10.0,"[2,0]",2.0,Metal Boat,,,2.0,Whuffey,2.0,Whuffey,19.0,,NNMAC
+,,,,,html-button-response,46,562987,0.0-46.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1875.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_19,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,47,569644,0.0-47.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_20,observe,training,high,grey,10.0,"[2,1]",2.0,Metal Boat,,,2.0,Whuffey,2.0,Whuffey,20.0,,NNMAC
+,,,,,html-button-response,48,571078,0.0-48.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1431.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_20,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,49,576631,0.0-49.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_21,observe,training,high,grey,10.0,"[2,0]",2.0,Metal Boat,,,2.0,Whuffey,2.0,Whuffey,21.0,,NNMAC
+,,,,,html-button-response,50,578930,0.0-50.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2298.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_21,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,51,585778,0.0-51.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_22,observe,training,high,grey,10.0,"[0,1]",1.0,White Boat,,,1.0,Addish,2.0,Whuffey,22.0,,NNMAC
+,,,,,html-button-response,52,587512,0.0-52.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1733.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_22,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,53,589747,0.0-53.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2234.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>Training Complete!</h3>
+      <p>You've completed your training. Let's check your understanding before we continue to the fishing task!</p>
+    </div>",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,survey,54,697338,0.0-54.0-0.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,107556.0,,"{""pink_frame_value"":""100 coins"",""fish_change_frequency"":""Every day"",""alternative_boat"":""The Metal Boat, because it can sometimes catch Locona when fishing for Whuffey""}",comprehension_check,,,,,,,,,,,,,,,,[],NNMAC
+,,,,,html-button-response,55,699871,0.0-54.0-1.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2532.0,"
+            <div style=""max-width: 900px; margin: 0 auto;"">
+              <h3>Let's Try Again</h3>
+              <p>Some of your answers weren't quite right. Please review:</p>
+              <ul>
+                
+                <li>The valuable fish changes every few days</li>
+                
+              </ul>
+            </div>",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,survey,56,743856,0.0-54.1-0.1,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,43975.0,,"{""pink_frame_value"":""50 coins"",""fish_change_frequency"":""Every day"",""alternative_boat"":""The Metal Boat, because it can sometimes catch Locona when fishing for Whuffey""}",comprehension_check,,,,,,,,,,,,,,,,[],NNMAC
+,,,,,html-button-response,57,750484,0.0-54.1-1.1,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,6627.0,"
+            <div style=""max-width: 900px; margin: 0 auto;"">
+              <h3>Let's Try Again</h3>
+              <p>Some of your answers weren't quite right. Please review:</p>
+              <ul>
+                <li>Remember: during festival days, the valuable fish is worth 100 coins</li>
+                <li>The valuable fish changes every few days</li>
+                
+              </ul>
+            </div>",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,survey,58,756931,0.0-54.2-0.2,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,6436.0,,"{""pink_frame_value"":""100 coins"",""fish_change_frequency"":""Every few days"",""alternative_boat"":""The Metal Boat, because it can sometimes catch Locona when fishing for Whuffey""}",comprehension_check,,,,,,,,,,,,,,,,[],NNMAC
+,,,,,html-button-response,59,759760,0.0-54.2-1.2,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2828.0,"
+            <div style=""max-width: 900px; margin: 0 auto;"">
+              <h3>Great job!</h3>
+              <p>You've correctly answered all the questions. Let's continue with the experiment.</p>
+            </div>",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,60,781946,0.0-55.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,22184.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>Ready for the Real Challenge!</h3>
+      <p>You've completed your training and now it's time to put your skills to the test. In this phase:</p>
+      <ul>
+        <li><strong>Your earnings will determine your bonus payment at the end of the study – every 650 coins will earn you $1 bonus!</strong></li>
+        <li>You won't know which fish is valuable (but Allie will)</li>
+        <li>Sometimes you'll watch Allie's choice, sometimes you'll fish on your own</li>
+        <li>You won't see your earnings during the trial, but you'll see them during the breaks and at the end</li>
+      </ul>
+      <p>Remember:
+      <ul>
+        <li>Not all boats are always available! Whenever Allie is fishing, only two boats will be available for her to choose from!</li>
+        <li>Allie always knows which fish is valuable</li>
+        <li>The valuable fish changes every few days</li>
+      </ul>
+      <p>Ready to start fishing?</p>
+    </div>",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,61,802977,0.0-56.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,21029.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>Routine Days</h3>
+      <img src='img/misthaven_routine.png' width='650' height='auto'></img>
+      <p>The following days are routine days. The valuable fish is worth 10 coins.</p>
+    </div>",0,routine_start,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,62,814040,0.0-57.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_1,observe,experimental,low,gray,10.0,"[1,2]",2.0,Metal Boat,,,0.0,Locona,0.0,Locona,1.0,,NNMAC
+,,,,,html-button-response,63,818905,0.0-58.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,4864.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_1,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,64,834846,0.0-59.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_2,observe,experimental,low,gray,10.0,"[0,1]",0.0,Wood Boat,,,0.0,Locona,0.0,Locona,2.0,,NNMAC
+,,,,,html-button-response,65,836788,0.0-60.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1939.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_2,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,66,841395,0.0-61.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_3,observe,experimental,low,gray,10.0,"[1,2]",2.0,Metal Boat,,,2.0,Whuffey,0.0,Locona,3.0,,NNMAC
+,,,,,html-button-response,67,843456,0.0-62.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2057.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_3,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,68,853861,0.0-63.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,10403.5,,0,fish_bandit_trial_4,play,experimental,low,gray,10.0,"[2,0]",0.0,Wood Boat,10.0,10.0,0.0,Locona,0.0,Locona,4.0,,NNMAC
+,,,,,html-button-response,69,855254,0.0-64.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1390.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_4,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,70,860547,0.0-65.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,5291.200000047684,,0,fish_bandit_trial_5,play,experimental,low,gray,10.0,"[0,2]",0.0,Wood Boat,10.0,20.0,0.0,Locona,0.0,Locona,5.0,,NNMAC
+,,,,,html-button-response,71,861978,0.0-66.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1429.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_5,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,72,867818,0.0-67.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_6,observe,experimental,low,gray,10.0,"[2,1]",2.0,Metal Boat,,,0.0,Locona,0.0,Locona,6.0,,NNMAC
+,,,,,html-button-response,73,869397,0.0-68.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1577.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_6,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,74,876329,0.0-69.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,6929.699999988079,,0,fish_bandit_trial_7,play,experimental,low,gray,10.0,"[2,0]",0.0,Wood Boat,0.0,20.0,0.0,Locona,1.0,Addish,7.0,,NNMAC
+,,,,,html-button-response,75,877606,0.0-70.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1276.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_7,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,76,885134,0.0-71.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_8,observe,experimental,low,gray,10.0,"[2,1]",1.0,White Boat,,,1.0,Addish,1.0,Addish,8.0,,NNMAC
+,,,,,html-button-response,77,887284,0.0-72.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2147.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_8,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,78,892245,0.0-73.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,4958.900000035763,,1,fish_bandit_trial_9,play,experimental,low,gray,10.0,"[1,0]",1.0,White Boat,10.0,30.0,1.0,Addish,1.0,Addish,9.0,,NNMAC
+,,,,,html-button-response,79,893815,0.0-74.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1568.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_9,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,80,897915,0.0-75.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_10,observe,experimental,low,gray,10.0,"[1,2]",1.0,White Boat,,,2.0,Whuffey,1.0,Addish,10.0,,NNMAC
+,,,,,html-button-response,81,899796,0.0-76.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1878.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_10,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,82,906545,0.0-77.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_11,observe,experimental,low,gray,10.0,"[2,0]",0.0,Wood Boat,,,0.0,Locona,1.0,Addish,11.0,,NNMAC
+,,,,,html-button-response,83,909540,0.0-78.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2992.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_11,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,84,920863,0.0-79.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,11321.30000001192,,2,fish_bandit_trial_12,play,experimental,low,gray,10.0,"[2,1]",2.0,Metal Boat,0.0,30.0,2.0,Whuffey,1.0,Addish,12.0,,NNMAC
+,,,,,html-button-response,85,922632,0.0-80.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1767.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_12,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,86,928166,0.0-81.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_13,observe,experimental,low,gray,10.0,"[2,0]",0.0,Wood Boat,,,0.0,Locona,1.0,Addish,13.0,,NNMAC
+,,,,,html-button-response,87,931359,0.0-82.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,3192.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_13,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,88,937307,0.0-83.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_14,observe,experimental,low,gray,10.0,"[2,1]",2.0,Metal Boat,,,2.0,Whuffey,0.0,Locona,14.0,,NNMAC
+,,,,,html-button-response,89,939087,0.0-84.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1777.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_14,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,90,940859,0.0-85.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1769.699999988079,,2,fish_bandit_trial_15,play,experimental,low,gray,10.0,"[2,0]",2.0,Metal Boat,0.0,30.0,2.0,Whuffey,0.0,Locona,15.0,,NNMAC
+,,,,,html-button-response,91,942297,0.0-86.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1436.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_15,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,92,949565,0.0-87.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_16,observe,experimental,low,gray,10.0,"[0,1]",0.0,Wood Boat,,,0.0,Locona,0.0,Locona,16.0,,NNMAC
+,,,,,html-button-response,93,950928,0.0-88.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1360.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_16,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,94,954361,0.0-89.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,3430.699999988079,,0,fish_bandit_trial_17,play,experimental,low,gray,10.0,"[0,2]",0.0,Wood Boat,0.0,30.0,1.0,Addish,0.0,Locona,17.0,,NNMAC
+,,,,,html-button-response,95,955403,0.0-90.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1040.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_17,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,96,1077431,0.0-91.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,122026.0,"You have completed 15% of the fishing task.<br><br>
+          In this section, you earned <strong>30 coins</strong>.<br><br> 
+          Overall, you have earned <strong>30 coins</strong>, which adds <strong>$0.05</strong> to your bonus payment. <br><br> 
+          Remember that the valuable fish will keep changing from time to time, so pay attention to Allie's choices! <br><br> 
+          When you're ready, press the button to continue.",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,97,1108751,0.0-92.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,31319.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>💰🎉 Festival Days! 🎉💰</h3>
+      <img src='img/misthaven_festival.png' width='650' height='auto'></img>
+      <p>Festival days are here! During the following days, the valuable fish is worth 100 coins!</p>
+    </div>",0,festival_start,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,98,1113654,0.0-93.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_18,observe,experimental,high,deeppink,100.0,"[0,2]",0.0,Wood Boat,,,1.0,Addish,1.0,Addish,18.0,,NNMAC
+,,,,,html-button-response,99,1114902,0.0-94.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1246.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_18,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,100,1120038,0.0-95.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_19,observe,experimental,high,deeppink,100.0,"[1,2]",1.0,White Boat,,,1.0,Addish,1.0,Addish,19.0,,NNMAC
+,,,,,html-button-response,101,1120885,0.0-96.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,844.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_19,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,102,1127303,0.0-97.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_20,observe,experimental,high,deeppink,100.0,"[0,2]",0.0,Wood Boat,,,0.0,Locona,1.0,Addish,20.0,,NNMAC
+,,,,,html-button-response,103,1128315,0.0-98.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1010.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_20,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,104,1131608,0.0-99.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,3291.600000023842,,1,fish_bandit_trial_21,play,experimental,high,deeppink,100.0,"[0,1]",1.0,White Boat,0.0,30.0,2.0,Whuffey,1.0,Addish,21.0,,NNMAC
+,,,,,html-button-response,105,1132846,0.0-100.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1237.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_21,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,106,1134596,0.0-101.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1748.9000000357628,,1,fish_bandit_trial_22,play,experimental,high,deeppink,100.0,"[2,1]",1.0,White Boat,100.0,130.0,1.0,Addish,1.0,Addish,22.0,,NNMAC
+,,,,,html-button-response,107,1139677,0.0-102.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,5080.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_22,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,108,1149971,0.0-103.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_23,observe,experimental,high,deeppink,100.0,"[2,0]",0.0,Wood Boat,,,0.0,Locona,1.0,Addish,23.0,,NNMAC
+,,,,,html-button-response,109,1150860,0.0-104.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,886.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_23,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,110,1154460,0.0-105.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,3599.300000011921,,2,fish_bandit_trial_24,play,experimental,high,deeppink,100.0,"[2,1]",2.0,Metal Boat,0.0,130.0,0.0,Locona,1.0,Addish,24.0,,NNMAC
+,,,,,html-button-response,111,1156189,0.0-106.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1729.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_24,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,112,1160320,0.0-107.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_25,observe,experimental,high,deeppink,100.0,"[1,0]",0.0,Wood Boat,,,0.0,Locona,0.0,Locona,25.0,,NNMAC
+,,,,,html-button-response,113,1161133,0.0-108.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,811.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_25,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,114,1167977,0.0-109.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_26,observe,experimental,high,deeppink,100.0,"[1,2]",2.0,Metal Boat,,,2.0,Whuffey,0.0,Locona,26.0,,NNMAC
+,,,,,html-button-response,115,1168872,0.0-110.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,892.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_26,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,116,1172211,0.0-111.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,3338.199999988079,,0,fish_bandit_trial_27,play,experimental,high,deeppink,100.0,"[2,0]",0.0,Wood Boat,100.0,230.0,0.0,Locona,0.0,Locona,27.0,,NNMAC
+,,,,,html-button-response,117,1173471,0.0-112.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1259.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_27,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,118,1178347,0.0-113.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_28,observe,experimental,high,deeppink,100.0,"[0,1]",0.0,Wood Boat,,,0.0,Locona,0.0,Locona,28.0,,NNMAC
+,,,,,html-button-response,119,1179972,0.0-114.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1622.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_28,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,120,1182564,0.0-115.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2590.600000023842,,0,fish_bandit_trial_29,play,experimental,high,deeppink,100.0,"[0,2]",0.0,Wood Boat,0.0,230.0,1.0,Addish,0.0,Locona,29.0,,NNMAC
+,,,,,html-button-response,121,1184200,0.0-116.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1634.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_29,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,122,1189354,0.0-117.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_30,observe,experimental,high,deeppink,100.0,"[0,1]",0.0,Wood Boat,,,0.0,Locona,0.0,Locona,30.0,,NNMAC
+,,,,,html-button-response,123,1190374,0.0-118.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1018.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_30,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,124,1192602,0.0-119.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2226.2000000476837,,0,fish_bandit_trial_31,play,experimental,high,deeppink,100.0,"[0,2]",0.0,Wood Boat,0.0,230.0,0.0,Locona,1.0,Addish,31.0,,NNMAC
+,,,,,html-button-response,125,1194481,0.0-120.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1878.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_31,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,126,1208717,0.0-121.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_32,observe,experimental,high,deeppink,100.0,"[0,1]",1.0,White Boat,,,1.0,Addish,1.0,Addish,32.0,,NNMAC
+,,,,,html-button-response,127,1210107,0.0-122.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1387.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_32,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,128,1214905,0.0-123.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_33,observe,experimental,high,deeppink,100.0,"[1,2]",1.0,White Boat,,,1.0,Addish,1.0,Addish,33.0,,NNMAC
+,,,,,html-button-response,129,1216297,0.0-124.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1389.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_33,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,130,1226513,0.0-125.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,10215.5,,0,fish_bandit_trial_34,play,experimental,high,deeppink,100.0,"[2,0]",0.0,Wood Boat,0.0,230.0,0.0,Locona,1.0,Addish,34.0,,NNMAC
+,,,,,html-button-response,131,1227295,0.0-126.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,781.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_34,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,132,1233257,0.0-127.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,5961.0,"You have completed 27% of the fishing task.<br><br>
+          In this section, you earned <strong>200 coins</strong>.<br><br> 
+          Overall, you have earned <strong>230 coins</strong>, which adds <strong>$0.35</strong> to your bonus payment. <br><br> 
+          Remember that the valuable fish will keep changing from time to time, so pay attention to Allie's choices! <br><br> 
+          When you're ready, press the button to continue.",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,133,1235175,0.0-128.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1917.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>Routine Days</h3>
+      <img src='img/misthaven_routine.png' width='650' height='auto'></img>
+      <p>The following days are routine days. The valuable fish is worth 10 coins.</p>
+    </div>",0,routine_start,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,134,1279455,0.0-129.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_35,observe,experimental,low,gray,10.0,"[0,1]",1.0,White Boat,,,1.0,Addish,2.0,Whuffey,35.0,,NNMAC
+,,,,,html-button-response,135,1280456,0.0-130.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,997.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_35,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,136,1284525,0.0-131.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_36,observe,experimental,low,gray,10.0,"[0,2]",2.0,Metal Boat,,,2.0,Whuffey,2.0,Whuffey,36.0,,NNMAC
+,,,,,html-button-response,137,1285362,0.0-132.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,835.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_36,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,138,1290511,0.0-133.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_37,observe,experimental,low,gray,10.0,"[0,1]",1.0,White Boat,,,2.0,Whuffey,2.0,Whuffey,37.0,,NNMAC
+,,,,,html-button-response,139,1291848,0.0-134.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1335.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_37,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,140,1295565,0.0-135.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,3715.300000011921,,2,fish_bandit_trial_38,play,experimental,low,gray,10.0,"[1,2]",2.0,Metal Boat,0.0,230.0,0.0,Locona,2.0,Whuffey,38.0,,NNMAC
+,,,,,html-button-response,141,1296605,0.0-136.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1039.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_38,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,142,1300506,0.0-137.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_39,observe,experimental,low,gray,10.0,"[0,1]",1.0,White Boat,,,1.0,Addish,2.0,Whuffey,39.0,,NNMAC
+,,,,,html-button-response,143,1301341,0.0-138.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,833.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_39,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,144,1302528,0.0-139.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1186.300000011921,,1,fish_bandit_trial_40,play,experimental,low,gray,10.0,"[1,2]",1.0,White Boat,10.0,240.0,2.0,Whuffey,2.0,Whuffey,40.0,,NNMAC
+,,,,,html-button-response,145,1303843,0.0-140.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1314.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_40,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,146,1307558,0.0-141.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_41,observe,experimental,low,gray,10.0,"[2,0]",0.0,Wood Boat,,,0.0,Locona,0.0,Locona,41.0,,NNMAC
+,,,,,html-button-response,147,1308618,0.0-142.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1059.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_41,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,148,1313071,0.0-143.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_42,observe,experimental,low,gray,10.0,"[0,1]",0.0,Wood Boat,,,1.0,Addish,0.0,Locona,42.0,,NNMAC
+,,,,,html-button-response,149,1313821,0.0-144.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,748.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_42,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,150,1318732,0.0-145.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,4910.199999988079,,0,fish_bandit_trial_43,play,experimental,low,gray,10.0,"[0,2]",0.0,Wood Boat,10.0,250.0,0.0,Locona,0.0,Locona,43.0,,NNMAC
+,,,,,html-button-response,151,1319430,0.0-146.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,696.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_43,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,152,1323239,0.0-147.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_44,observe,experimental,low,gray,10.0,"[2,1]",2.0,Metal Boat,,,0.0,Locona,0.0,Locona,44.0,,NNMAC
+,,,,,html-button-response,153,1332562,0.0-148.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,9320.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_44,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,154,1334722,0.0-149.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2157.800000011921,,0,fish_bandit_trial_45,play,experimental,low,gray,10.0,"[2,0]",0.0,Wood Boat,10.0,260.0,0.0,Locona,0.0,Locona,45.0,,NNMAC
+,,,,,html-button-response,155,1336066,0.0-150.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1343.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_45,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,156,1340038,0.0-151.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_46,observe,experimental,low,gray,10.0,"[2,1]",2.0,Metal Boat,,,0.0,Locona,0.0,Locona,46.0,,NNMAC
+,,,,,html-button-response,157,1341655,0.0-152.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1615.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_46,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,158,1343396,0.0-153.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1739.800000011921,,0,fish_bandit_trial_47,play,experimental,low,gray,10.0,"[2,0]",0.0,Wood Boat,10.0,270.0,1.0,Addish,1.0,Addish,47.0,,NNMAC
+,,,,,html-button-response,159,1344341,0.0-154.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,944.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_47,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,160,1469546,0.0-155.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_48,observe,experimental,low,gray,10.0,"[2,1]",1.0,White Boat,,,1.0,Addish,1.0,Addish,48.0,,NNMAC
+,,,,,html-button-response,161,1470756,0.0-156.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1206.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_48,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,162,1476276,0.0-157.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_49,observe,experimental,low,gray,10.0,"[2,0]",0.0,Wood Boat,,,0.0,Locona,1.0,Addish,49.0,,NNMAC
+,,,,,html-button-response,163,1477363,0.0-158.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1084.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_49,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,164,1478712,0.0-159.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1347.100000023842,,0,fish_bandit_trial_50,play,experimental,low,gray,10.0,"[0,1]",0.0,Wood Boat,0.0,270.0,0.0,Locona,1.0,Addish,50.0,,NNMAC
+,,,,,html-button-response,165,1479671,0.0-160.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,958.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_50,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,166,1483699,0.0-161.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,4025.899999976158,,0,fish_bandit_trial_51,play,experimental,low,gray,10.0,"[0,2]",0.0,Wood Boat,0.0,270.0,0.0,Locona,1.0,Addish,51.0,,NNMAC
+,,,,,html-button-response,167,1484871,0.0-162.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1170.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_51,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,168,1486939,0.0-163.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2067.0,"You have completed 40% of the fishing task.<br><br>
+          In this section, you earned <strong>40 coins</strong>.<br><br> 
+          Overall, you have earned <strong>270 coins</strong>, which adds <strong>$0.42</strong> to your bonus payment. <br><br> 
+          Remember that the valuable fish will keep changing from time to time, so pay attention to Allie's choices! <br><br> 
+          When you're ready, press the button to continue.",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,169,1489131,0.0-164.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2190.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>💰🎉 Festival Days! 🎉💰</h3>
+      <img src='img/misthaven_festival.png' width='650' height='auto'></img>
+      <p>Festival days are here! During the following days, the valuable fish is worth 100 coins!</p>
+    </div>",0,festival_start,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,170,1493997,0.0-165.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_52,observe,experimental,high,deeppink,100.0,"[0,1]",1.0,White Boat,,,1.0,Addish,2.0,Whuffey,52.0,,NNMAC
+,,,,,html-button-response,171,1506618,0.0-166.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,12618.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_52,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,172,1513991,0.0-167.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_53,observe,experimental,high,deeppink,100.0,"[0,2]",2.0,Metal Boat,,,0.0,Locona,2.0,Whuffey,53.0,,NNMAC
+,,,,,html-button-response,173,1515134,0.0-168.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1140.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_53,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,174,1520035,0.0-169.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_54,observe,experimental,high,deeppink,100.0,"[0,1]",1.0,White Boat,,,1.0,Addish,2.0,Whuffey,54.0,,NNMAC
+,,,,,html-button-response,175,1521304,0.0-170.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1268.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_54,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,176,1522902,0.0-171.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1595.600000023842,,1,fish_bandit_trial_55,play,experimental,high,deeppink,100.0,"[1,2]",1.0,White Boat,0.0,270.0,1.0,Addish,2.0,Whuffey,55.0,,NNMAC
+,,,,,html-button-response,177,1524329,0.0-172.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1426.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_55,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,178,1528789,0.0-173.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,4458.600000023842,,0,fish_bandit_trial_56,play,experimental,high,deeppink,100.0,"[0,1]",0.0,Wood Boat,0.0,270.0,0.0,Locona,2.0,Whuffey,56.0,,NNMAC
+,,,,,html-button-response,179,1529974,0.0-174.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1184.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_56,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,180,1534199,0.0-175.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_57,observe,experimental,high,deeppink,100.0,"[1,2]",2.0,Metal Boat,,,0.0,Locona,2.0,Whuffey,57.0,,NNMAC
+,,,,,html-button-response,181,1535300,0.0-176.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1098.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_57,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,182,1539685,0.0-177.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_58,observe,experimental,high,deeppink,100.0,"[2,0]",0.0,Wood Boat,,,0.0,Locona,0.0,Locona,58.0,,NNMAC
+,,,,,html-button-response,183,1540952,0.0-178.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1264.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_58,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,184,1542610,0.0-179.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1657.300000011921,,0,fish_bandit_trial_59,play,experimental,high,deeppink,100.0,"[0,1]",0.0,Wood Boat,100.0,370.0,0.0,Locona,0.0,Locona,59.0,,NNMAC
+,,,,,html-button-response,185,1543827,0.0-180.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1215.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_59,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,186,1547692,0.0-181.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_60,observe,experimental,high,deeppink,100.0,"[0,2]",0.0,Wood Boat,,,1.0,Addish,0.0,Locona,60.0,,NNMAC
+,,,,,html-button-response,187,1548858,0.0-182.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1164.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_60,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,188,1553249,0.0-183.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_61,observe,experimental,high,deeppink,100.0,"[2,1]",2.0,Metal Boat,,,2.0,Whuffey,0.0,Locona,61.0,,NNMAC
+,,,,,html-button-response,189,1554630,0.0-184.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1379.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_61,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,190,1560529,0.0-185.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,5897.600000023842,,1,fish_bandit_trial_62,play,experimental,high,deeppink,100.0,"[1,0]",1.0,White Boat,0.0,370.0,2.0,Whuffey,0.0,Locona,62.0,,NNMAC
+,,,,,html-button-response,191,1561449,0.0-186.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,919.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_62,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,192,1565228,0.0-187.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_63,observe,experimental,high,deeppink,100.0,"[1,2]",2.0,Metal Boat,,,2.0,Whuffey,0.0,Locona,63.0,,NNMAC
+,,,,,html-button-response,193,1566771,0.0-188.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1540.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_63,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,194,1568303,0.0-189.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1530.0999999642372,,2,fish_bandit_trial_64,play,experimental,high,deeppink,100.0,"[2,0]",2.0,Metal Boat,0.0,370.0,2.0,Whuffey,1.0,Addish,64.0,,NNMAC
+,,,,,html-button-response,195,1569683,0.0-190.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1379.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_64,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,196,1573762,0.0-191.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_65,observe,experimental,high,deeppink,100.0,"[2,1]",1.0,White Boat,,,1.0,Addish,1.0,Addish,65.0,,NNMAC
+,,,,,html-button-response,197,1575803,0.0-192.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2040.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_65,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,198,1590782,0.0-193.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_66,observe,experimental,high,deeppink,100.0,"[2,0]",0.0,Wood Boat,,,1.0,Addish,1.0,Addish,66.0,,NNMAC
+,,,,,html-button-response,199,1601929,0.0-194.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,11144.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_66,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,200,1604543,0.0-195.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2613.600000023842,,1,fish_bandit_trial_67,play,experimental,high,deeppink,100.0,"[0,1]",1.0,White Boat,0.0,370.0,2.0,Whuffey,1.0,Addish,67.0,,NNMAC
+,,,,,html-button-response,201,1605587,0.0-196.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1043.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_67,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,202,1608290,0.0-197.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2701.600000023842,,1,fish_bandit_trial_68,play,experimental,high,deeppink,100.0,"[1,2]",1.0,White Boat,100.0,470.0,1.0,Addish,1.0,Addish,68.0,,NNMAC
+,,,,,html-button-response,203,1609454,0.0-198.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1163.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_68,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,204,1618347,0.0-199.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,8890.0,"You have completed 52% of the fishing task.<br><br>
+          In this section, you earned <strong>200 coins</strong>.<br><br> 
+          Overall, you have earned <strong>470 coins</strong>, which adds <strong>$0.72</strong> to your bonus payment. <br><br> 
+          Remember that the valuable fish will keep changing from time to time, so pay attention to Allie's choices! <br><br> 
+          When you're ready, press the button to continue.",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,205,1620429,0.0-200.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2080.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>Routine Days</h3>
+      <img src='img/misthaven_routine.png' width='650' height='auto'></img>
+      <p>The following days are routine days. The valuable fish is worth 10 coins.</p>
+    </div>",0,routine_start,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,206,1626732,0.0-201.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_69,observe,experimental,low,gray,10.0,"[0,1]",1.0,White Boat,,,2.0,Whuffey,2.0,Whuffey,69.0,,NNMAC
+,,,,,html-button-response,207,1628239,0.0-202.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1503.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_69,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,208,1631389,0.0-203.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_70,observe,experimental,low,gray,10.0,"[0,2]",2.0,Metal Boat,,,2.0,Whuffey,2.0,Whuffey,70.0,,NNMAC
+,,,,,html-button-response,209,1632546,0.0-204.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1155.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_70,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,210,1639349,0.0-205.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_71,observe,experimental,low,gray,10.0,"[0,1]",1.0,White Boat,,,1.0,Addish,2.0,Whuffey,71.0,,NNMAC
+,,,,,html-button-response,211,1640455,0.0-206.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1104.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_71,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,212,1642127,0.0-207.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1670.800000011921,,2,fish_bandit_trial_72,play,experimental,low,gray,10.0,"[1,2]",2.0,Metal Boat,10.0,480.0,2.0,Whuffey,2.0,Whuffey,72.0,,NNMAC
+,,,,,html-button-response,213,1643206,0.0-208.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1078.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_72,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,214,1647588,0.0-209.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_73,observe,experimental,low,gray,10.0,"[2,0]",2.0,Metal Boat,,,2.0,Whuffey,2.0,Whuffey,73.0,,NNMAC
+,,,,,html-button-response,215,1648826,0.0-210.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1236.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_73,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,216,1652092,0.0-211.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_74,observe,experimental,low,gray,10.0,"[0,1]",1.0,White Boat,,,1.0,Addish,2.0,Whuffey,74.0,,NNMAC
+,,,,,html-button-response,217,1653315,0.0-212.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1221.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_74,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,218,1656149,0.0-213.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2831.400000035763,,2,fish_bandit_trial_75,play,experimental,low,gray,10.0,"[0,2]",2.0,Metal Boat,0.0,480.0,2.0,Whuffey,0.0,Locona,75.0,,NNMAC
+,,,,,html-button-response,219,1657513,0.0-214.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1361.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_75,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,220,1661078,0.0-215.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_76,observe,experimental,low,gray,10.0,"[0,1]",0.0,Wood Boat,,,0.0,Locona,0.0,Locona,76.0,,NNMAC
+,,,,,html-button-response,221,1663463,0.0-216.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2381.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_76,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,222,1664860,0.0-217.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1395.399999976158,,0,fish_bandit_trial_77,play,experimental,low,gray,10.0,"[0,2]",0.0,Wood Boat,10.0,490.0,0.0,Locona,0.0,Locona,77.0,,NNMAC
+,,,,,html-button-response,223,1666704,0.0-218.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1843.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_77,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,224,1670376,0.0-219.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_78,observe,experimental,low,gray,10.0,"[2,1]",2.0,Metal Boat,,,2.0,Whuffey,0.0,Locona,78.0,,NNMAC
+,,,,,html-button-response,225,1671520,0.0-220.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1143.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_78,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,226,1672571,0.0-221.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1048.699999988079,,2,fish_bandit_trial_79,play,experimental,low,gray,10.0,"[2,0]",2.0,Metal Boat,0.0,490.0,2.0,Whuffey,0.0,Locona,79.0,,NNMAC
+,,,,,html-button-response,227,1673597,0.0-222.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1024.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_79,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,228,1677557,0.0-223.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_80,observe,experimental,low,gray,10.0,"[2,1]",2.0,Metal Boat,,,2.0,Whuffey,0.0,Locona,80.0,,NNMAC
+,,,,,html-button-response,229,1679188,0.0-224.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1628.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_80,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,230,1685025,0.0-225.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_81,observe,experimental,low,gray,10.0,"[2,0]",2.0,Metal Boat,,,2.0,Whuffey,2.0,Whuffey,81.0,,NNMAC
+,,,,,html-button-response,231,1686851,0.0-226.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1822.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_81,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,232,1688517,0.0-227.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1664.399999976158,,1,fish_bandit_trial_82,play,experimental,low,gray,10.0,"[0,1]",1.0,White Boat,0.0,490.0,1.0,Addish,2.0,Whuffey,82.0,,NNMAC
+,,,,,html-button-response,233,1689693,0.0-228.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1176.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_82,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,234,1694062,0.0-229.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_83,observe,experimental,low,gray,10.0,"[0,2]",2.0,Metal Boat,,,2.0,Whuffey,2.0,Whuffey,83.0,,NNMAC
+,,,,,html-button-response,235,1695121,0.0-230.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1057.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_83,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,236,1697672,0.0-231.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2549.899999976158,,2,fish_bandit_trial_84,play,experimental,low,gray,10.0,"[2,1]",2.0,Metal Boat,10.0,500.0,2.0,Whuffey,2.0,Whuffey,84.0,,NNMAC
+,,,,,html-button-response,237,1699231,0.0-232.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1557.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_84,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,238,1704006,0.0-233.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,4773.699999988079,,1,fish_bandit_trial_85,play,experimental,low,gray,10.0,"[1,0]",1.0,White Boat,0.0,500.0,1.0,Addish,2.0,Whuffey,85.0,,NNMAC
+,,,,,html-button-response,239,1704946,0.0-234.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,938.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_85,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,240,1707095,0.0-235.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2148.0,"You have completed 65% of the fishing task.<br><br>
+          In this section, you earned <strong>30 coins</strong>.<br><br> 
+          Overall, you have earned <strong>500 coins</strong>, which adds <strong>$0.77</strong> to your bonus payment. <br><br> 
+          Remember that the valuable fish will keep changing from time to time, so pay attention to Allie's choices! <br><br> 
+          When you're ready, press the button to continue.",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,241,1709696,0.0-236.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2599.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>💰🎉 Festival Days! 🎉💰</h3>
+      <img src='img/misthaven_festival.png' width='650' height='auto'></img>
+      <p>Festival days are here! During the following days, the valuable fish is worth 100 coins!</p>
+    </div>",0,festival_start,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,242,1713532,0.0-237.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_86,observe,experimental,high,deeppink,100.0,"[0,2]",0.0,Wood Boat,,,0.0,Locona,1.0,Addish,86.0,,NNMAC
+,,,,,html-button-response,243,1715521,0.0-238.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1987.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_86,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,244,1720386,0.0-239.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_87,observe,experimental,high,deeppink,100.0,"[1,2]",1.0,White Boat,,,1.0,Addish,1.0,Addish,87.0,,NNMAC
+,,,,,html-button-response,245,1721820,0.0-240.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1432.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_87,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,246,1726197,0.0-241.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_88,observe,experimental,high,deeppink,100.0,"[0,2]",0.0,Wood Boat,,,0.0,Locona,1.0,Addish,88.0,,NNMAC
+,,,,,html-button-response,247,1727637,0.0-242.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1438.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_88,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,248,1730328,0.0-243.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2689.199999988079,,0,fish_bandit_trial_89,play,experimental,high,deeppink,100.0,"[0,1]",0.0,Wood Boat,0.0,500.0,0.0,Locona,1.0,Addish,89.0,,NNMAC
+,,,,,html-button-response,249,1731523,0.0-244.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1194.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_89,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,250,1735348,0.0-245.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_90,observe,experimental,high,deeppink,100.0,"[0,2]",0.0,Wood Boat,,,0.0,Locona,1.0,Addish,90.0,,NNMAC
+,,,,,html-button-response,251,1737009,0.0-246.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1657.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_90,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,252,1740709,0.0-247.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_91,observe,experimental,high,deeppink,100.0,"[0,1]",1.0,White Boat,,,1.0,Addish,1.0,Addish,91.0,,NNMAC
+,,,,,html-button-response,253,1742088,0.0-248.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1378.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_91,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,254,1744038,0.0-249.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1948.199999988079,,1,fish_bandit_trial_92,play,experimental,high,deeppink,100.0,"[1,2]",1.0,White Boat,100.0,600.0,2.0,Whuffey,2.0,Whuffey,92.0,,NNMAC
+,,,,,html-button-response,255,1745040,0.0-250.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1000.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_92,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,256,1749901,0.0-251.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_93,observe,experimental,high,deeppink,100.0,"[1,0]",1.0,White Boat,,,1.0,Addish,2.0,Whuffey,93.0,,NNMAC
+,,,,,html-button-response,257,1750938,0.0-252.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1034.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_93,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,258,1753474,0.0-253.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2534.699999988079,,1,fish_bandit_trial_94,play,experimental,high,deeppink,100.0,"[1,2]",1.0,White Boat,0.0,600.0,1.0,Addish,2.0,Whuffey,94.0,,NNMAC
+,,,,,html-button-response,259,1754489,0.0-254.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1013.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_94,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,260,1758242,0.0-255.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_95,observe,experimental,high,deeppink,100.0,"[1,0]",1.0,White Boat,,,1.0,Addish,2.0,Whuffey,95.0,,NNMAC
+,,,,,html-button-response,261,1759667,0.0-256.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1422.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_95,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,262,1764312,0.0-257.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_96,observe,experimental,high,deeppink,100.0,"[0,2]",2.0,Metal Boat,,,0.0,Locona,2.0,Whuffey,96.0,,NNMAC
+,,,,,html-button-response,263,1765662,0.0-258.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1348.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_96,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,264,1770791,0.0-259.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,5128.199999988079,,1,fish_bandit_trial_97,play,experimental,high,deeppink,100.0,"[0,1]",1.0,White Boat,0.0,600.0,1.0,Addish,2.0,Whuffey,97.0,,NNMAC
+,,,,,html-button-response,265,1771859,0.0-260.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1066.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_97,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,266,1775465,0.0-261.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_98,observe,experimental,high,deeppink,100.0,"[1,2]",2.0,Metal Boat,,,0.0,Locona,0.0,Locona,98.0,,NNMAC
+,,,,,html-button-response,267,1782870,0.0-262.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,7401.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_98,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,268,1787176,0.0-263.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_99,observe,experimental,high,deeppink,100.0,"[2,0]",0.0,Wood Boat,,,0.0,Locona,0.0,Locona,99.0,,NNMAC
+,,,,,html-button-response,269,1796423,0.0-264.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,9245.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_99,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,270,1798168,0.0-265.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1743.699999988079,,0,fish_bandit_trial_100,play,experimental,high,deeppink,100.0,"[0,1]",0.0,Wood Boat,100.0,700.0,0.0,Locona,0.0,Locona,100.0,,NNMAC
+,,,,,html-button-response,271,1799528,0.0-266.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1358.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_100,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,272,1820768,0.0-267.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_101,observe,experimental,high,deeppink,100.0,"[1,2]",2.0,Metal Boat,,,2.0,Whuffey,0.0,Locona,101.0,,NNMAC
+,,,,,html-button-response,273,1826121,0.0-268.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,5351.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_101,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,274,1828303,0.0-269.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2180.899999976158,,1,fish_bandit_trial_102,play,experimental,high,deeppink,100.0,"[1,0]",1.0,White Boat,0.0,700.0,1.0,Addish,0.0,Locona,102.0,,NNMAC
+,,,,,html-button-response,275,1829717,0.0-270.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1412.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_102,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,276,1833392,0.0-271.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,3674.0,"You have completed 77% of the fishing task.<br><br>
+          In this section, you earned <strong>200 coins</strong>.<br><br> 
+          Overall, you have earned <strong>700 coins</strong>, which adds <strong>$1.08</strong> to your bonus payment. <br><br> 
+          Remember that the valuable fish will keep changing from time to time, so pay attention to Allie's choices! <br><br> 
+          When you're ready, press the button to continue.",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,277,1834862,0.0-272.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1469.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>Routine Days</h3>
+      <img src='img/misthaven_routine.png' width='650' height='auto'></img>
+      <p>The following days are routine days. The valuable fish is worth 10 coins.</p>
+    </div>",0,routine_start,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,278,1838908,0.0-273.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_103,observe,experimental,low,gray,10.0,"[0,1]",1.0,White Boat,,,2.0,Whuffey,2.0,Whuffey,103.0,,NNMAC
+,,,,,html-button-response,279,1840067,0.0-274.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1156.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_103,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,280,1844738,0.0-275.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_104,observe,experimental,low,gray,10.0,"[0,2]",2.0,Metal Boat,,,2.0,Whuffey,2.0,Whuffey,104.0,,NNMAC
+,,,,,html-button-response,281,1845750,0.0-276.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1010.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_104,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,282,1850210,0.0-277.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_105,observe,experimental,low,gray,10.0,"[0,1]",1.0,White Boat,,,2.0,Whuffey,2.0,Whuffey,105.0,,NNMAC
+,,,,,html-button-response,283,1851611,0.0-278.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1398.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_105,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,284,1853085,0.0-279.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1472.600000023842,,2,fish_bandit_trial_106,play,experimental,low,gray,10.0,"[1,2]",2.0,Metal Boat,10.0,710.0,2.0,Whuffey,2.0,Whuffey,106.0,,NNMAC
+,,,,,html-button-response,285,1854284,0.0-280.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1197.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_106,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,286,1858748,0.0-281.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_107,observe,experimental,low,gray,10.0,"[1,2]",2.0,Metal Boat,,,0.0,Locona,2.0,Whuffey,107.0,,NNMAC
+,,,,,html-button-response,287,1860215,0.0-282.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1464.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_107,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,288,1861849,0.0-283.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1632.199999988079,,0,fish_bandit_trial_108,play,experimental,low,gray,10.0,"[1,0]",0.0,Wood Boat,0.0,710.0,0.0,Locona,2.0,Whuffey,108.0,,NNMAC
+,,,,,html-button-response,289,1863104,0.0-284.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1253.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_108,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,290,1866613,0.0-285.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_109,observe,experimental,low,gray,10.0,"[1,2]",2.0,Metal Boat,,,0.0,Locona,2.0,Whuffey,109.0,,NNMAC
+,,,,,html-button-response,291,1868034,0.0-286.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1419.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_109,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,292,1871461,0.0-287.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_110,observe,experimental,low,gray,10.0,"[2,0]",0.0,Wood Boat,,,0.0,Locona,1.0,Addish,110.0,,NNMAC
+,,,,,html-button-response,293,1872708,0.0-288.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1244.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_110,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,294,1875131,0.0-289.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2421.899999976158,,2,fish_bandit_trial_111,play,experimental,low,gray,10.0,"[2,1]",2.0,Metal Boat,0.0,710.0,0.0,Locona,1.0,Addish,111.0,,NNMAC
+,,,,,html-button-response,295,1876449,0.0-290.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1316.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_111,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,296,1880029,0.0-291.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_112,observe,experimental,low,gray,10.0,"[1,0]",1.0,White Boat,,,1.0,Addish,1.0,Addish,112.0,,NNMAC
+,,,,,html-button-response,297,1882190,0.0-292.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2158.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_112,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,298,1887588,0.0-293.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,5397.099999964237,,0,fish_bandit_trial_113,play,experimental,low,gray,10.0,"[0,2]",0.0,Wood Boat,10.0,720.0,1.0,Addish,1.0,Addish,113.0,,NNMAC
+,,,,,html-button-response,299,1888714,0.0-294.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1124.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_113,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,300,1892353,0.0-295.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_114,observe,experimental,low,gray,10.0,"[2,1]",1.0,White Boat,,,1.0,Addish,1.0,Addish,114.0,,NNMAC
+,,,,,html-button-response,301,1893639,0.0-296.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1284.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_114,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,302,1895424,0.0-297.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1783.4000000357628,,0,fish_bandit_trial_115,play,experimental,low,gray,10.0,"[2,0]",0.0,Wood Boat,0.0,720.0,0.0,Locona,1.0,Addish,115.0,,NNMAC
+,,,,,html-button-response,303,1896694,0.0-298.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1269.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_115,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,304,1901201,0.0-299.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_116,observe,experimental,low,gray,10.0,"[0,1]",1.0,White Boat,,,2.0,Whuffey,1.0,Addish,116.0,,NNMAC
+,,,,,html-button-response,305,1902240,0.0-300.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1036.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_116,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,306,1906281,0.0-301.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_117,observe,experimental,low,gray,10.0,"[1,2]",2.0,Metal Boat,,,2.0,Whuffey,0.0,Locona,117.0,,NNMAC
+,,,,,html-button-response,307,1907595,0.0-302.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1311.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_117,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,308,1908627,0.0-303.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1029.300000011921,,2,fish_bandit_trial_118,play,experimental,low,gray,10.0,"[2,0]",2.0,Metal Boat,0.0,720.0,2.0,Whuffey,0.0,Locona,118.0,,NNMAC
+,,,,,html-button-response,309,1909741,0.0-304.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1112.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_118,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,310,1912786,0.0-305.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,3043.800000011921,,1,fish_bandit_trial_119,play,experimental,low,gray,10.0,"[0,1]",1.0,White Boat,0.0,720.0,1.0,Addish,0.0,Locona,119.0,,NNMAC
+,,,,,html-button-response,311,1913690,0.0-306.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,902.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_119,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,312,1915691,0.0-307.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2000.0,"You have completed 90% of the fishing task.<br><br>
+          In this section, you earned <strong>20 coins</strong>.<br><br> 
+          Overall, you have earned <strong>720 coins</strong>, which adds <strong>$1.11</strong> to your bonus payment. <br><br> 
+          Remember that the valuable fish will keep changing from time to time, so pay attention to Allie's choices! <br><br> 
+          When you're ready, press the button to continue.",0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,313,1917689,0.0-308.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1997.0,"
+    <div style=""max-width: 900px; margin: 0 auto;"">
+      <h3>💰🎉 Festival Days! 🎉💰</h3>
+      <img src='img/misthaven_festival.png' width='650' height='auto'></img>
+      <p>Festival days are here! During the following days, the valuable fish is worth 100 coins!</p>
+    </div>",0,festival_start,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,314,1922201,0.0-309.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_120,observe,experimental,high,deeppink,100.0,"[0,2]",0.0,Wood Boat,,,0.0,Locona,1.0,Addish,120.0,,NNMAC
+,,,,,html-button-response,315,1924038,0.0-310.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1835.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_120,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,316,1927994,0.0-311.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_121,observe,experimental,high,deeppink,100.0,"[1,2]",1.0,White Boat,,,2.0,Whuffey,1.0,Addish,121.0,,NNMAC
+,,,,,html-button-response,317,1929400,0.0-312.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1404.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_121,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,318,1933714,0.0-313.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_122,observe,experimental,high,deeppink,100.0,"[0,2]",0.0,Wood Boat,,,0.0,Locona,1.0,Addish,122.0,,NNMAC
+,,,,,html-button-response,319,1936686,0.0-314.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2967.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_122,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,320,1938740,0.0-315.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2053.0,,0,fish_bandit_trial_123,play,experimental,high,deeppink,100.0,"[0,1]",0.0,Wood Boat,0.0,720.0,0.0,Locona,1.0,Addish,123.0,,NNMAC
+,,,,,html-button-response,321,1940128,0.0-316.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1387.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_123,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,322,1943582,0.0-317.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,0,fish_bandit_trial_124,observe,experimental,high,deeppink,100.0,"[0,2]",0.0,Wood Boat,,,0.0,Locona,1.0,Addish,124.0,,NNMAC
+,,,,,html-button-response,323,1945639,0.0-318.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2053.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_124,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,324,1949917,0.0-319.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_125,observe,experimental,high,deeppink,100.0,"[0,1]",1.0,White Boat,,,1.0,Addish,1.0,Addish,125.0,,NNMAC
+,,,,,html-button-response,325,1951471,0.0-320.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1551.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_125,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,326,1954071,0.0-321.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2599.199999988079,,1,fish_bandit_trial_126,play,experimental,high,deeppink,100.0,"[1,2]",1.0,White Boat,100.0,820.0,2.0,Whuffey,2.0,Whuffey,126.0,,NNMAC
+,,,,,html-button-response,327,1955590,0.0-322.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1517.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_126,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,328,1959103,0.0-323.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_127,observe,experimental,high,deeppink,100.0,"[1,0]",1.0,White Boat,,,1.0,Addish,2.0,Whuffey,127.0,,NNMAC
+,,,,,html-button-response,329,1960889,0.0-324.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1783.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_127,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,330,1966989,0.0-325.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_128,observe,experimental,high,deeppink,100.0,"[1,2]",2.0,Metal Boat,,,2.0,Whuffey,2.0,Whuffey,128.0,,NNMAC
+,,,,,html-button-response,331,1969405,0.0-326.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,2412.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_128,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,332,1970705,0.0-327.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1298.600000023842,,2,fish_bandit_trial_129,play,experimental,high,deeppink,100.0,"[2,0]",2.0,Metal Boat,100.0,920.0,2.0,Whuffey,2.0,Whuffey,129.0,,NNMAC
+,,,,,html-button-response,333,1971961,0.0-328.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1255.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_129,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,334,1975418,0.0-329.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_130,observe,experimental,high,deeppink,100.0,"[0,1]",1.0,White Boat,,,1.0,Addish,2.0,Whuffey,130.0,,NNMAC
+,,,,,html-button-response,335,1976924,0.0-330.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1505.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_130,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,336,1978396,0.0-331.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1470.2999999523165,,0,fish_bandit_trial_131,play,experimental,high,deeppink,100.0,"[0,2]",0.0,Wood Boat,0.0,920.0,0.0,Locona,2.0,Whuffey,131.0,,NNMAC
+,,,,,html-button-response,337,1979695,0.0-332.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1297.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_131,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,338,1983291,0.0-333.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,2,fish_bandit_trial_132,observe,experimental,high,deeppink,100.0,"[2,1]",2.0,Metal Boat,,,2.0,Whuffey,2.0,Whuffey,132.0,,NNMAC
+,,,,,html-button-response,339,1992030,0.0-334.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,8736.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Whuffey</strong></p><br>
+            <img src='img/fish_red.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_132,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,340,1999343,0.0-335.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_133,observe,experimental,high,deeppink,100.0,"[1,0]",1.0,White Boat,,,1.0,Addish,1.0,Addish,133.0,,NNMAC
+,,,,,html-button-response,341,2000557,0.0-336.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1213.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_133,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,342,2001916,0.0-337.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1358.300000011921,,0,fish_bandit_trial_134,play,experimental,high,deeppink,100.0,"[0,2]",0.0,Wood Boat,0.0,920.0,0.0,Locona,1.0,Addish,134.0,,NNMAC
+,,,,,html-button-response,343,2002844,0.0-338.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,927.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Locona</strong></p><br>
+            <img src='img/fish_blue.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_134,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,344,2007211,0.0-339.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,,,1,fish_bandit_trial_135,observe,experimental,high,deeppink,100.0,"[0,1]",1.0,White Boat,,,1.0,Addish,1.0,Addish,135.0,,NNMAC
+,,,,,html-button-response,345,2008218,0.0-340.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1005.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>Allie caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_135,,,,,,,,,,,,,,,,,NNMAC
+,,,,,fishBanditPlugin,346,2009643,0.0-341.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1423.0,,0,fish_bandit_trial_136,play,experimental,high,deeppink,100.0,"[0,2]",0.0,Wood Boat,100.0,1020.0,1.0,Addish,1.0,Addish,136.0,,NNMAC
+,,,,,html-button-response,347,2010694,0.0-342.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,1051.0,"
+        <div class=""feedback-container"" style=""text-align: center;"">
+          <h3>Fishing Results</h3>
+          <div style=""text-align: center;"">
+            <p>You caught: <strong>Addish</strong></p><br>
+            <img src='img/fish_green.png' style='width: 150px; height: auto; margin: 10px;'></img>
+          </div></div>",0,feedback_136,,,,,,,,,,,,,,,,,NNMAC
+,,,,,html-button-response,348,2015987,0.0-343.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,5291.0,You have completed the fishing task! <br> <br> You earned <strong>1020 coins</strong>. Your bonus payment is <strong>$1.57</strong>. <br> <br> Please answer the following questions about yourself and about your experience in the task.,0,,,,,,,,,,,,,,,,,,NNMAC
+,,,,,survey,349,2023211,0.0-344.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,7211.0,,"{""P0_Q0"":null,""age"":""31"",""gender"":""Male"",""education"":""2 year degree""}",demographics,,,,,,,,,,,,,,,,[],NNMAC
+,,,,,survey,350,2030506,0.0-345.0,1,0.1538461538461538,Certain,"[[0.8,0.2,0],[0,0.8,0.2],[0.2,0,0.8]]",0,6.5,7289.0,,"{""P0_Q0"":null,""fun"":""5"",""suggestions"":"""",""strategy"":""""}",feedback,,,,,,,,,,,,,,,,[],NNMAC
